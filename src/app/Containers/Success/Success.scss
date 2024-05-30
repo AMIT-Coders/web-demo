@@ -1,0 +1,151 @@
+.success-container {
+  // height: 570px;
+  // margin-bottom: 40px;
+  padding: 48px 68px;
+  .empower {
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: flex-start;
+    .left {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 28px;
+      h2 {
+        color: var(--Secondary-color, #00a5a5);
+
+        /* Sec Title */
+        font-family: Poppins medium;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      p {
+        max-width: 360px;
+        color: #555;
+        font-family: Poppins regular;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.32px;
+      }
+    }
+    .right {
+      margin-right: 80px;
+      img {
+        border-radius: 20px;
+        position: relative;
+        width: 378.386px;
+        height: 355.333px;
+        object-fit: cover;
+      }
+
+      .reviewbox {
+        width: 400px;
+        // height: 224px;
+        flex-shrink: 0;
+        position: absolute;
+        z-index: 1;
+        margin-top: 227.584 + 19.83px;
+        margin-left: 48px;
+        z-index: 10;
+
+        display: flex;
+        padding: 26.667px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 47.333px;
+        border-radius: 8px;
+
+        border-left: var(--Numbers-1, 8px) solid var(--Supported-color, #df2e38);
+        background: var(--white-for-text-on-CTA, #fff);
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .success-container {
+    margin: 0;
+    padding: 32px;
+    .empower {
+      .right {
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 960px) {
+  .success-container {
+    .empower {
+      flex-direction: column;
+      gap: 32px;
+      position: relative;
+      margin-bottom: 480px;
+      .right {
+        // margin-right: -80px !important;
+        position: absolute;
+        right: 0;
+      }
+    }
+    .benefits {
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .success-container {
+    .titleblob > h3 {
+      font-size: 22px !important;
+    }
+
+    .reviewSwipe {
+      width: 90vw !important;
+      img {
+        margin: auto;
+        width: 90% !important;
+      }
+    }
+
+    .empower {
+      flex-direction: column;
+      align-items: center;
+      // padding: 22px;
+      .left {
+        gap: 0px !important;
+      }
+      .left > h2 {
+        font-size: 22px !important;
+      }
+      .left > p {
+        display: none;
+      }
+      .right > img {
+        height: 274px;
+        width: 260px;
+        margin-top: 18px;
+        border-radius: 8px;
+      }
+      .right {
+        margin: 0;
+      }
+      .reviewbox {
+        margin-left: 0 !important;
+        width: 100% !important;
+        height: 174px !important;
+      }
+      .reviewboxes {
+        // width: 100%;
+      }
+    }
+  }
+}

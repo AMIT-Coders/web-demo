@@ -1,0 +1,126 @@
+.upskill-container {
+  // height: 544px;
+  .empower {
+    padding: 48px 68px;
+    display: flex;
+    gap: 80px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    p,
+    h2 {
+      margin: 0;
+    }
+    .left {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 28px;
+      h2 {
+        color: var(--Secondary-color, #00a5a5);
+
+        /* Sec Title */
+        font-family: Poppins medium;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      p {
+        max-width: 498px;
+        color: #555;
+        font-family: Poppins regular;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.32px;
+      }
+    }
+    .right {
+      img {
+        border-radius: 8px;
+        // position: relative;
+        width: 533px;
+        height: 560px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      .reviewbox {
+        width: 400px;
+        height: 224px;
+        flex-shrink: 0;
+        position: absolute;
+        z-index: 1;
+        margin-top: 227.584 + 19.83px;
+        margin-left: 48px;
+
+        display: flex;
+        padding: 26.667px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 47.333px;
+        border-radius: 8px;
+
+        border-left: var(--Numbers-1, 8px) solid var(--Supported-color, #df2e38);
+        background: var(--white-for-text-on-CTA, #fff);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .upskill-container {
+    .empower {
+      padding: 32px;
+      flex-direction: column;
+      gap: 32px;
+      .left {
+        h3 {
+          font-size: 26.667px !important;
+        }
+      }
+      .right {
+        align-self: flex-end;
+      }
+    }
+    .benefits {
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .upskill-container {
+    .titleblob > h3 {
+      font-size: 22px !important;
+    }
+
+    .empower {
+      flex-direction: column;
+      align-items: center;
+      padding: 22px;
+      .left {
+        gap: 12px !important;
+      }
+      .left > h2 {
+        font-size: 22px !important;
+      }
+      .left > p {
+        // display: none;
+      }
+      .right > img {
+        height: 274px;
+        width: 90vw;
+        margin-top: 18px;
+        border-radius: 8px;
+      }
+      .reviewbox {
+        margin-left: -24px !important;
+        width: 308px !important;
+        height: 174px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.radio-button:hover {
+  cursor: pointer;
+}
+.radio-button {
+  .r-btn:hover,
+  input:hover,
+  label:hover {
+    cursor: pointer;
+  }
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  z-index: 1001;
+
+  .r-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    gap: 12px;
+    height: 48px;
+    width: 148px;
+    border-radius: 12px 0 0 12px;
+  }
+
+  .r-btn input[type="radio"] {
+    accent-color: red;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .radio-button {
+    display: none;
+  }
+}

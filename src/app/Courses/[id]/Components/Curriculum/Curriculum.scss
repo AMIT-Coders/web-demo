@@ -1,0 +1,204 @@
+.curriculum {
+  margin: 40px 80px;
+
+  .phone-curr {
+    display: none;
+  }
+
+  .nav-item-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 100%;
+  }
+
+  .nav-item-title {
+    flex-shrink: 1;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 40px);
+  }
+  .card-header {
+    padding: 0px !important;
+    border-radius: 8px;
+    border: none;
+  }
+  .tabs-phone {
+    display: none;
+  }
+  .accordion-selected {
+    background-color: #09253d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .accordion-unselected {
+    background-color: #ecebeb;
+    color: #09253d;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .accordion-selected::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 32px;
+    background-color: red;
+    margin-right: 10px;
+    margin-top: 0px !important;
+
+    border-radius: 6px;
+    @media only screen and (max-width: 660px) {
+      margin-top: 0;
+      height: 22px;
+      width: 8px;
+    }
+  }
+
+  .accordion-unselected::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 24px;
+    height: 32px;
+    background-color: #00a5a5;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    margin-top: 0px !important;
+    @media only screen and (max-width: 660px) {
+      margin-top: 0;
+      height: 22px;
+      width: 8px;
+    }
+  }
+  .subheader {
+    font-size: 24px;
+  }
+  .active {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(9, 37, 61, 0.2);
+    background-color: #09253d !important;
+
+    h2 {
+      color: #fff !important;
+      font-family: Poppins semibold;
+    }
+  }
+  .tabs {
+    height: 100%;
+  }
+
+  .bg {
+    height: 100%;
+  }
+
+  .tab-pane {
+    border-radius: 4px;
+    border: none !important;
+    .bg {
+      padding: 20px;
+      border-radius: 4px;
+      background-color: #e0e0e0;
+      border: none !important;
+      height: auto !important;
+    }
+
+    h3 {
+      color: var(--Primary-Blue-color, #09253d);
+      /* Sec Subtilte */
+      font-family: Poppins semibold;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    p {
+      color: var(--Primary-Blue-color, #09253d);
+      /* supported text for sec */
+      font-family: Poppins light;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 36px */
+      letter-spacing: 0.48px;
+    }
+    img {
+      margin-left: auto;
+    }
+  }
+  .nav-item:hover,
+  .nav-link:hover {
+    background-color: #b3bbc3;
+  }
+
+  .nav-link,
+  .nav-item {
+    position: relative;
+    border-radius: 4px;
+
+    h2 {
+      color: var(--Primary-Blue-color, #09253d);
+      /* Sec Subtilte */
+      font-family: Poppins regular;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0;
+    }
+    p {
+      color: var(--Primary-Blue-color, #09253d);
+      /* supported text for sec */
+      font-family: Poppins light;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 36px */
+      letter-spacing: 0.48px;
+    }
+  }
+}
+
+.curriculum .nav-item {
+  width: 100%;
+}
+
+.curriculum .nav-link {
+  padding-right: 0px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .curriculum {
+    margin: 32px;
+    .subheader {
+      font-size: 16px;
+    }
+  }
+}
+@media only screen and (max-width: 690px) {
+  .curriculum {
+    .phone-curr {
+      display: block;
+    }
+    .subheader {
+      font-size: 12.241px;
+    }
+    margin: 16px;
+    .tabs {
+      display: none;
+    }
+    .tabs-phone {
+      display: block !important;
+    }
+  }
+}

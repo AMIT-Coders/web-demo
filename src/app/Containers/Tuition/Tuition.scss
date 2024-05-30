@@ -1,0 +1,84 @@
+.tuition-section {
+  padding: 40px 80px;
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins medium;
+
+    .price {
+      background-color: #fff;
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+      border-left: 10px solid #df2e38;
+      border-radius: 16px;
+      gap: 12px;
+    }
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    p {
+      font-family: Poppins regular;
+      font-size: 24px;
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tuition-section {
+    .head {
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+  }
+}
+@media only screen and (max-width: 690px) {
+  .tuition-section {
+    padding: 16px;
+
+    .head {
+      flex-direction: column;
+      .price {
+        padding: 8px 20px;
+        width: 97%;
+        padding-bottom: 0;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      h5,
+      h4 {
+        font-size: 12.47px;
+      }
+      h2 {
+        font-size: 16.63px;
+      }
+    }
+
+    .items {
+      .item {
+        align-items: flex-start;
+        gap: 8px;
+        .chk-icon {
+          width: 24px;
+          height: 24px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

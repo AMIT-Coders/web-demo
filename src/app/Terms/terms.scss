@@ -1,0 +1,30 @@
+.terms-and-conditions {
+  padding: 80px;
+  font-family: Poppins regular;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: Poppins semibold;
+    color: #00a5a5;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .terms-and-conditions {
+    padding: 40px !important;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .terms-and-conditions {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .terms-and-conditions {
+    padding: 16px !important;
+  }
+}

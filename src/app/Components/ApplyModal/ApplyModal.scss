@@ -1,0 +1,142 @@
+.modal {
+  z-index: 99999;
+  margin-top: -32px;
+  .thanks {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    .thanks-msg {
+      font-family: Poppins medium;
+      font-size: 24px;
+    }
+  }
+  .tabs {
+    display: flex !important;
+    padding: 20px 64px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .form-check-input:checked {
+    background-color: #00a5a5;
+    border-color: #00a5a5;
+  }
+  .form-check {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    #agreementCheckbox {
+      width: 24px;
+    }
+  }
+  .modal-content {
+    width: 928px !important;
+    margin: auto !important;
+  }
+  .modal-dialog {
+    max-width: none;
+  }
+  .modal-title {
+    color: var(--Primary-Blue-color, #09253d);
+    font-family: Poppins medium;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.1px;
+  }
+  .modal-header {
+    border-bottom: none;
+  }
+  .modal-body {
+    border-bottom: none !important;
+  }
+  .btn {
+    align-items: center;
+  }
+  .form-submit-btn {
+    width: 100%;
+    color: var(--white-for-text-on-CTA, #fff);
+    font-family: Poppins regular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    background-color: #00a5a5;
+    border: none;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .modal {
+    width: 100% !important;
+    .modal-content {
+      width: 90vw !important;
+    }
+    .thanks {
+      width: 70%;
+    }
+    // .right {
+    //   width: 98% !important;
+    // }
+    .tabs {
+      padding: 20px !important;
+      justify-content: center;
+
+      .left {
+        // display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 660px) {
+  .modal {
+    .modal-body {
+      width: 100% !important;
+    }
+    .thanks {
+      width: 90%;
+    }
+    .thanks-msg {
+      font-size: 20px !important;
+    }
+    // width: 97vw !important;
+    .modal-content {
+      margin: auto !important;
+      // width: 100% !important;
+    }
+    // .right {
+    //   width: 98% !important;
+    // }
+    .tabs {
+      // width: 100% !important;
+      justify-content: flex-start;
+      padding: 0px !important;
+      .left {
+        display: none;
+      }
+      .right {
+        width: 100%;
+      }
+    }
+    // .modal-content {
+    //   // width: 100% !important;
+    // }
+
+    .inp,
+    select {
+      width: 99%;
+      // margin: auto;
+    }
+    .PhoneInput {
+      width: 99% !important;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+.faqs-section {
+  padding: 40px 80px;
+
+  button {
+    font-family: Poppins medium;
+    font-size: 28px;
+    @media only screen and (max-width: 660px) {
+      font-size: 16px;
+    }
+  }
+
+  .faqs {
+    padding: 0 120px;
+    @media only screen and (max-width: 660px) {
+      padding: 0 8px;
+    }
+  }
+  .card-body {
+    font-family: Poppins regular;
+    font-size: 24px;
+
+    @media only screen and (max-width: 660px) {
+      font-size: 12.4px;
+    }
+  }
+  .card-header {
+    padding: 0;
+    border-radius: 8px;
+    border: none;
+  }
+  .accordion-selected {
+    background-color: #09253d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .accordion-unselected {
+    background-color: #fff;
+    color: #09253d;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .accordion-selected::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 32px;
+    background-color: red;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    border-radius: 6px;
+    @media only screen and (max-width: 660px) {
+      margin-top: 0;
+      height: 22px;
+      width: 8px;
+    }
+  }
+
+  .accordion-unselected::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 24px;
+    height: 32px;
+    background-color: #00a5a5;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    @media only screen and (max-width: 660px) {
+      margin-top: 0;
+      height: 22px;
+      width: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .faqs-section {
+    padding: 32px;
+    .faqs {
+      padding: 0px;
+    }
+  }
+}
+@media only screen and (max-width: 690px) {
+  .faqs-section {
+    padding: 16px;
+  }
+}
+
+.accordion-selected {
+  background-color: #09253d;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.accordion-unselected {
+  background-color: #fff;
+  color: #09253d;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.accordion-selected::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 24px;
+  background-color: red;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: -6px;
+  border-radius: 6px;
+}
+
+.accordion-unselected::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 24px;
+  background-color: #00a5a5;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: -6px;
+  border-radius: 6px;
+}

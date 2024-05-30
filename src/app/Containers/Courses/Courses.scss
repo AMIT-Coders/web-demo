@@ -1,0 +1,207 @@
+.courses-container {
+  .schedule-btn,
+  .call-btn {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 8px;
+  }
+  .schedule-btn {
+    img {
+      height: 20px;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  .call-btn:hover {
+    background-color: #e6e9ec;
+    border: transparent;
+  }
+  .call-btn {
+    transition: all 0.5s ease;
+    background-color: transparent;
+    border: 1px solid #00a5a5;
+    color: #00a5a5;
+    img {
+    }
+  }
+  @media screen and (min-width: 440px) {
+    .swiper-container {
+      width: 440px;
+    }
+  }
+  @media screen and (min-width: 640px) {
+    .swiper-container {
+      width: 640px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .swiper-container {
+      width: 768px;
+    }
+  }
+  padding: 80px;
+  .active {
+    color: var(--Secondary-color, #00a5a5);
+    border-bottom: 2px solid var(--Secondary-color, #00a5a5);
+  }
+  h2 {
+    color: var(--Primary-Blue-color, #09253d);
+    text-align: center;
+    /* Sec Title */
+    font-family: Poppins medium;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .sticky {
+    transition: all 0.3s ease;
+    background-color: #fff !important;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    position: fixed !important;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 24px !important;
+    max-width: 1800px;
+    margin: auto;
+    z-index: 10;
+  }
+
+  .tabs {
+    /* Initial state: not visible */
+    display: none;
+
+    white-space: nowrap;
+    /* Other styles */
+  }
+
+  .tabs.show {
+    /* Make tabs visible */
+    display: block; /* or flex, inline-block, etc., depending on your layout */
+  }
+
+  .tab:hover {
+    color: var(--Secondary-color, #00a5a5);
+  }
+  .tabs {
+    transition: all 0.5s ease;
+    padding: 16px 8px;
+    .right {
+      display: flex;
+      gap: 24px;
+    }
+    .left {
+      display: flex;
+      gap: 32px;
+    }
+    scrollbar-width: none;
+    overflow-x: scroll;
+    // margin-top: 40px;
+    border-radius: 10px;
+    display: flex;
+    // padding: var(--Numbers-1, 8px) 80px;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: transparent;
+
+    p {
+      margin-bottom: 0;
+      //   color: var(--Secondary-color, #00a5a5);
+      text-align: center;
+      font-family: Roboto;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+    }
+    .tab {
+      cursor: pointer;
+    }
+  }
+
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 40px;
+    gap: 40px;
+    // height: 368px;
+    justify-content: center;
+    align-items: center;
+    // gap: 20px;
+    // overflow-x: scroll;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .courses-container {
+    padding: 40px 20px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .courses-container {
+    padding: 40px 20px;
+    .loading {
+      font-size: 16px !important;
+    }
+    h2 {
+      font-size: 22px;
+      text-align: left;
+    }
+    .titleblob {
+      justify-content: flex-start !important;
+    }
+    .tabs {
+      // overflow-x: scroll;
+      // padding: 8px;
+      // // height: 40px;
+      // height: auto;
+      // .tab {
+      //   flex-grow: 1;
+      //   width: auto;
+      //   display: flex;
+      //   height: auto;
+      //   padding: 10px;
+      //   justify-content: center;
+      //   align-items: center;
+      //   gap: 16px;
+      //   flex-shrink: 0;
+      // }
+      .tab > p {
+        font-size: 16px;
+      }
+      .tab {
+        white-space: nowrap;
+      }
+    }
+    .courses {
+      // overflow: hidden;
+      flex-direction: column;
+      width: 100%;
+      // overflow-x: scroll;
+      margin: 56px 0px;
+    }
+  }
+}
+// @media only screen and (max-width: 900px) {
+// }
+
+// @media only screen and (max-width: 660px) {
+// }
+
+@media only screen and (max-width: 660px) {
+}

@@ -1,0 +1,124 @@
+.coursenav::-webkit-scrollbar,
+.sticky-navbar::-webkit-scrollbar {
+  display: none;
+}
+.coursenav,
+.sticky-navbar {
+  padding: var(--Numbers-1, 8px) 80px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  // padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .schedule-btn,
+  .call-btn {
+    background-color: #00a5a5;
+    border: none;
+    font-family: Poppins regular;
+    transition: all 0.3s ease;
+  }
+  .schedule-btn:hover {
+    background-color: #09253d;
+  }
+  .call-btn2:hover {
+    background-color: #e6e9ec;
+    border: 1px solid transparent;
+  }
+  .call-btn2 {
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: 1px solid #00a5a5;
+    color: #00a5a5;
+    img {
+      margin-right: 2px;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.tab {
+  margin-right: 20px;
+  font-family: Poppins regular;
+  //   width: 100%;
+}
+
+.tab span {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* Prevent line breaks */
+  padding: 4px;
+}
+
+.tab span:hover {
+  color: #00a5a5;
+}
+
+.tab span:not(.active) {
+  color: #333;
+  border-bottom: none;
+}
+.tab span.active {
+  color: #00a5a5;
+  border-bottom: 2px solid #00a5a5;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.schedule-btn,
+.call-btn2 {
+  margin-left: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #00a5a5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.schedule-btn img,
+.call-btn img {
+  margin-right: 8px;
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+}
+
+@media only screen and (max-width: 690px) {
+  .coursenav,
+  .sticky-navbar {
+    padding: var(--Numbers-1, 8px) 16px;
+    .tab {
+      margin-right: 20px !important;
+    }
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .coursenav,
+  .sticky-navbar {
+    padding: var(--Numbers-1, 8px) 16px;
+    overflow-x: none;
+    .schedule-btn,
+    .tab {
+      margin: 0;
+    }
+  }
+}

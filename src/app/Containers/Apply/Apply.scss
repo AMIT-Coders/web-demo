@@ -1,0 +1,103 @@
+.apply-container {
+  padding: 40px 80px;
+  background-color: var(--Primary-Blue-color, #09253d);
+  .header-apply {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      color: var(--white-for-text-on-CTA, #fff);
+      font-family: Poppins regular;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+  .subheader {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 12px;
+    .items {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      .cohort {
+        color: var(--white-for-text-on-CTA, #767676);
+        font-family: Poppins regular;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0px;
+      }
+      .date {
+        color: var(--white-for-text-on-CTA, #fff);
+        font-family: Poppins semibold;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0px;
+      }
+      .item {
+        border-left: 3px solid #df2e38;
+        padding: 8px;
+      }
+    }
+    h4 {
+      font-family: Poppins light;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      color: var(--white-for-text-on-CTA, #fff);
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .apply-container {
+    padding: 40px;
+    h2 {
+      font-size: 32px !important;
+    }
+    .date {
+      font-family: Poppins medium !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .apply-container {
+    padding: 20px;
+    .header-apply {
+      h2 {
+        font-size: 24px;
+      }
+      .primary-btn {
+        width: auto;
+        height: auto;
+        font-size: 11.765px;
+        padding: 5.882px 14.118px;
+      }
+    }
+    .subheader {
+      flex-direction: column;
+      gap: 26px;
+      margin-top: 20px;
+      h4,
+      .date {
+        font-size: 16px !important;
+      }
+      .cohort {
+        font-size: 12px !important;
+      }
+      h4 {
+        margin-bottom: 24px !important;
+      }
+    }
+  }
+}

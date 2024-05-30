@@ -1,0 +1,60 @@
+.newsletter-container {
+  text-align: center;
+
+  margin-top: 40px;
+  padding-bottom: 40px;
+  // position: relative;
+  h2 {
+    font-family: Poppins semibold;
+    font-size: 40px;
+  }
+  .newsletter-input-container {
+    position: relative;
+    width: 60%;
+    margin: auto;
+  }
+  input {
+    width: 100%;
+    height: 72px;
+    margin-top: 32px;
+    border: none;
+    padding: 0 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    &:focus {
+      outline: none;
+      border: 2px solid var(--Secondary-color, #00a5a5);
+    }
+  }
+  button {
+    display: inline-flex;
+    padding: 8px 16px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--Secondary-color, #00a5a5);
+    color: var(--white-for-text-on-CTA, #fff);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    &:hover {
+      background-color: var(--Secondary-color, #00a5a5);
+    }
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .newsletter-container {
+    display: none;
+  }
+}
